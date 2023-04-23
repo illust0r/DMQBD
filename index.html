@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>记账应用</title>
+</head>
+<body>
+    <h1>记账应用</h1>
+    <form id="transaction-form">
+        <input type="text" id="transaction-description" placeholder="描述">
+        <input type="number" id="transaction-amount" placeholder="金额">
+        <select id="transaction-type">
+            <option value="expense">支出</option>
+            <option value="income">收入</option>
+        </select>
+        <select id="transaction-category">
+            <option value="groceries">购物</option>
+            <option value="Restaurant">餐饮</option>
+            <option value="housing">住房</option>
+            <option value="transport">交通</option>
+            <option value="entertainment">娱乐</option>
+            <option value="other">其他</option>
+        </select>
+        <input type="date" id="transaction-date">
+        <button type="submit">添加</button>
+    </form>
+    <h2>余额: ¥<span id="balance">0.00</span></h2>
+    <div id="transaction-list"></div>
+    <div id="chart"></div>
+    <script src="app.js"></script>
+</body>
+</html>
