@@ -7,7 +7,7 @@ const transactionDate = document.getElementById('transaction-date');
 const transactionList = document.getElementById('transaction-list');
 const balanceDisplay = document.getElementById('balance');
 const chart = document.getElementById('chart');
-
+//
 let transactions = [];
 
 async function fetchTransactions() {
