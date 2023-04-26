@@ -8,6 +8,7 @@ const transactionList = document.getElementById('transaction-list');
 const balanceDisplay = document.getElementById('balance');
 const chart = document.getElementById('chart');
 //
+//
 let transactions = [];
 
 async function fetchTransactions() {
