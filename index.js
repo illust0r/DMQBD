@@ -12,7 +12,7 @@ const sequelize = new Sequelize('accounting_app', 'fzw', '020122', {
   dialect: 'mysql',
 });
 
-// Transaction model
+// Transaction model.
 const Transaction = sequelize.define('Transaction', {
   description: {
     type: DataTypes.STRING,
