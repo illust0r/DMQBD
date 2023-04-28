@@ -113,7 +113,7 @@ transactionForm.addEventListener('submit', async (e) => {
 
     sortTransactionsByDate();
     await updateUI();
-
+//
     transactionDescription.value = '';
     transactionAmount.value = '';
     transactionDate.value = '';
