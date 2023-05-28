@@ -13,6 +13,7 @@ const sequelize = new Sequelize('accounting_app', 'fzw', '020122', {
 });
 
 // Transaction model.
+
 const Transaction = sequelize.define('Transaction', {
   description: {
     type: DataTypes.STRING,

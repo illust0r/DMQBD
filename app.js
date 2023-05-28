@@ -7,10 +7,9 @@ const transactionDate = document.getElementById('transaction-date');
 const transactionList = document.getElementById('transaction-list');
 const balanceDisplay = document.getElementById('balance');
 const chart = document.getElementById('chart');
-//
-//
-let transactions = [];
 
+let transactions = [];
+//
 async function fetchTransactions() {
     const response = await fetch('http://localhost:3001/transactions');
     transactions = await response.json();
@@ -113,7 +112,7 @@ transactionForm.addEventListener('submit', async (e) => {
 
     sortTransactionsByDate();
     await updateUI();
-//
+
     transactionDescription.value = '';
     transactionAmount.value = '';
     transactionDate.value = '';
